@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 400;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 700;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+      format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-image: linear-gradient(
+      -60deg,
+      rgba(106, 13, 24, 0.65),
+      rgba(36, 77, 79, 0.85)
+    ),
+    url("./resources/images/joker-happy-dancing-dc.webp");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Netflix Sans", sans-serif;
+  /* background: slategrey url("./resources/images/joker-happy-dancing-dc.jpg")
+    no-repeat fixed center;
+  object-fit: contain; */
+  color: ghostwhite;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2.5rem;
+}
+
+.navbar__logo-container {
+  width: 200px;
+}
+
+.navbar__logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 3.5rem;
+}
+
+nav ul li {
+  margin-left: 3.5rem;
+  font-size: 1.4rem;
+}
+
+nav ul li a,
+.main__trailer-button {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: "Netflix Sans", sans-serif;
+}
+
+.main {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 3.5rem;
+}
+
+.main__description-container {
+  width: 50%;
+}
+
+.main__movie-image-container {
+  width: 250px;
+}
+
+.main__movie-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.main__button-container {
+  display: flex;
+}
+
+.main__subtitle {
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+
+.main__description {
+  font-size: 1.6rem;
+  margin: 1.5rem auto;
+  line-height: 1.5;
+}
+
+.main__trailer-button {
+  margin: 2.5rem 0 0;
+  border: 1px solid ghostwhite;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  max-width: 110px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.main__trailer-button:nth-child(2) {
+  margin-left: 2.5rem;
+}
+
+.main__trailer-button:hover,
+.main__trailer-button:nth-child(2):hover {
+  background-color: ghostwhite;
+  color: rgb(36, 77, 79);
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0ms;
+  -webkit-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0ms;
+  -moz-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0ms;
+  -ms-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0ms;
+  -o-transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0ms;
+}
